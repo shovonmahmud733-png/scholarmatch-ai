@@ -1,0 +1,851 @@
+import { Scholarship } from '../types';
+
+export const SCHOLARSHIPS_DATA: Scholarship[] = [
+  {
+    id: 'chevening-uk-2025',
+    title: 'Chevening Master\'s Scholarship',
+    provider: 'Foreign, Commonwealth & Development Office (FCDO), UK Government',
+    host_university: 'Any accredited UK Higher Education Institution',
+    destination_country: 'United Kingdom',
+    destination_city: 'London / Nationwide',
+    eligible_nationalities: ['Commonwealth & Eligible Partner Countries (160+ countries excluding British Citizens)'],
+    target_degrees: ['masters'],
+    eligible_subjects: ['Public Policy', 'International Relations', 'Computer Science & AI', 'Climate Change & Sustainability', 'Economics & Finance', 'Engineering', 'Law', 'All Eligible Taught Masters'],
+    academic_requirements: {
+      min_gpa: 3.3,
+      grading_scale: '4.0',
+      required_degree: 'Bachelor degree equivalent to at least an upper second-class 2:1 honours degree in the UK',
+      description: 'Undergraduate degree equivalent to an upper second-class 2:1 honours degree. Must demonstrate minimum 2,800 hours (approx. 2 years) of verifiable work experience.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS Academic', 'TOEFL iBT', 'PTE Academic'],
+      min_ielts: 6.5,
+      min_toefl: 92,
+      is_waivable: true,
+      waiver_conditions: 'Formal test requirements have been relaxed by Chevening central committee, but recipient university admission requirements must be met by applicant.',
+      description: 'English requirement met via host university unconditional offer conditions.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 1530,
+      monthly_stipend_currency: 'GBP',
+      living_stipend_details: '£1,530/month (London rate) or £1,236/month (Outside London) living allowance.',
+      travel_allowance_details: 'Economy class roundtrip airfare from home country to the UK, plus arrival allowance (£1,000+).',
+      health_insurance_covered: true,
+      accommodation_provided: false, // stipend is intended to pay for accommodation
+      visa_fee_covered: true,
+      other_allowances: 'Departure allowance, dissertation grant, and visa application fee reimbursement.',
+      estimated_annual_value_usd: 48000
+    },
+    application_open_date: '2025-08-05',
+    application_deadline: '2025-11-04',
+    intake_year: 2026,
+    official_url: 'https://www.chevening.org/scholarships/',
+    source_url: 'https://www.chevening.org/scholarships/guidance/eligibility/',
+    last_verified_at: '2025-01-15',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Proven leadership qualities, influence, and community impact',
+      'Clear, strategic career plan demonstrating tangible benefit to home country',
+      'Academic suitability and strong passion for chosen UK courses',
+      'Minimum two years (2,800 hours) verified professional work experience'
+    ],
+    application_procedure: [
+      'Submit formal online application through the official Chevening online application portal before deadline',
+      'Select three distinct, eligible UK master\'s courses',
+      'Provide two references and comprehensive leadership essays',
+      'Shortlisted candidates attend an in-person panel interview at British Embassy or High Commission',
+      'Secure at least one unconditional university offer by July milestone'
+    ],
+    required_documents: [
+      { id: 'transcripts', name: 'Official Academic Transcripts & Degree Certificates', required: true },
+      { id: 'ref-letters', name: 'Two Professional or Academic References', required: true },
+      { id: 'sop', name: 'Four 500-word Chevening Leadership & Networking Essays', required: true },
+      { id: 'passport', name: 'Valid International Passport', required: true },
+      { id: 'uni-offer', name: 'Unconditional Offer Letter from UK University (by July)', required: false }
+    ],
+    overview: 'Chevening is the UK government\'s global scholarship programme that offers future leaders the unique opportunity to study in the UK. These scholarships are awarded to outstanding professionals from all over the world to pursue a one-year master\'s degree in any subject at any UK university.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'Leadership', 'UK FCDO', 'Master\'s Only', 'Work Experience Required']
+  },
+  {
+    id: 'fulbright-foreign-student-2025',
+    title: 'Fulbright Foreign Student Program',
+    provider: 'U.S. Department of State, Bureau of Educational and Cultural Affairs',
+    host_university: 'Accredited US Universities (placed by IIE)',
+    destination_country: 'United States',
+    destination_city: 'Various US Cities',
+    eligible_nationalities: ['155+ participating countries worldwide (non-US citizens)'],
+    target_degrees: ['masters', 'phd'],
+    eligible_subjects: ['Public Health', 'Data Science & AI', 'Economics', 'Environmental Science', 'Education', 'Social Sciences', 'Humanities', 'All Non-Clinical Fields'],
+    academic_requirements: {
+      min_gpa: 3.5,
+      grading_scale: '4.0',
+      required_degree: 'Undergraduate degree (Bachelor equivalent) with superior academic record',
+      description: 'Strong academic record typically placing applicant in top 10-15% of graduating cohort. Non-clinical fields only (no clinical patient care medicine).'
+    },
+    language_requirements: {
+      accepted_tests: ['TOEFL iBT', 'IELTS Academic', 'GRE (subject to program)'],
+      min_ielts: 7.0,
+      min_toefl: 100,
+      is_waivable: false,
+      waiver_conditions: 'Testing vouchers provided by US Embassy / Binational Commission for qualified semi-finalists.',
+      description: 'Competitive English proficiency required for US graduate school seminars and academic writing.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 2200,
+      monthly_stipend_currency: 'USD',
+      living_stipend_details: '$1,800 – $2,600 monthly living stipend scaled to city cost of living.',
+      travel_allowance_details: 'Roundtrip international airfare between home country and the United States.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'ASPE health benefits plan, book and equipment settling-in allowance, enrichment seminars.',
+      estimated_annual_value_usd: 55000
+    },
+    application_open_date: '2025-02-01',
+    application_deadline: '2025-06-15',
+    intake_year: 2026,
+    official_url: 'https://foreign.fulbrightonline.org/',
+    source_url: 'https://foreign.fulbrightonline.org/about/foreign-student-program',
+    last_verified_at: '2025-01-20',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Academic excellence and clearly formulated study or research proposal',
+      'Demonstrated commitment to cultural exchange and mutual understanding',
+      'Leadership potential and readiness to contribute to home society upon return',
+      'J-1 visa two-year home residency rule compliance'
+    ],
+    application_procedure: [
+      'Apply directly through the local U.S. Embassy or Binational Fulbright Commission in your home country',
+      'Country deadlines vary between March and August; preliminary review by commission',
+      'Shortlisted applicants undergo interview and take required standardized exams (funded by Fulbright)',
+      'Final placement managed in cooperation with Institute of International Education (IIE)'
+    ],
+    required_documents: [
+      { id: 'transcripts', name: 'Certified Academic Records & Transcripts', required: true },
+      { id: 'ref-letters', name: 'Three Confidential Academic/Professional Recommendations', required: true },
+      { id: 'sop', name: 'Study/Research Objectives Statement (2 pages)', required: true },
+      { id: 'personal-statement', name: 'Personal Statement (1 page narrative)', required: true },
+      { id: 'cv', name: 'Curriculum Vitae / Resume', required: true }
+    ],
+    overview: 'The Fulbright Foreign Student Program enables graduate students, young professionals and artists from abroad to study and conduct research in the United States. Fulbright operates in more than 160 countries, fostering mutual cultural understanding.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'US State Dept', 'Master\'s & PhD', 'Cultural Exchange', 'J-1 Visa']
+  },
+  {
+    id: 'daad-helmut-schmidt-2025',
+    title: 'DAAD Helmut-Schmidt-Programme (Public Policy & Good Governance)',
+    provider: 'German Academic Exchange Service (DAAD) & Federal Foreign Office of Germany',
+    host_university: 'Consortium of German Universities (e.g. Hertie School, University of Passau, Willy Brandt School)',
+    destination_country: 'Germany',
+    destination_city: 'Berlin / Passau / Erfurt / Duisburg',
+    eligible_nationalities: ['Graduates from developing and emerging countries (DAC List of ODA Recipients)'],
+    target_degrees: ['masters'],
+    eligible_subjects: ['Public Policy', 'Good Governance', 'Public Management', 'International Economics', 'Peace and Conflict Studies', 'Political Science'],
+    academic_requirements: {
+      min_gpa: 3.2,
+      grading_scale: '4.0',
+      required_degree: 'Bachelor\'s degree obtained within the last 6 years in social science, law, economics, or public administration',
+      description: 'Degree completion within the last 6 years with above-average grades. Professional or volunteering experience in governance or social progress.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS Academic', 'TOEFL iBT', 'Cambridge C1'],
+      min_ielts: 6.5,
+      min_toefl: 90,
+      is_waivable: true,
+      waiver_conditions: 'Prior degree taught 100% in English with official institutional certificate.',
+      description: 'English proficiency certificate required; German language skills are helpful but courses are taught in English.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 934,
+      monthly_stipend_currency: 'EUR',
+      living_stipend_details: '€934 monthly living stipend, plus paid German language preparation course.',
+      travel_allowance_details: 'Flat-rate travel contribution covering return flights.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: false,
+      other_allowances: 'Study and research subsidy (€460/year), family allowances if applicable.',
+      estimated_annual_value_usd: 24000
+    },
+    application_open_date: '2025-06-01',
+    application_deadline: '2025-07-31',
+    intake_year: 2026,
+    official_url: 'https://www.daad.de/en/information-services-for-higher-education-institutions/further-information-on-daad-programmes/helmut-schmidt-programme/',
+    source_url: 'https://www2.daad.de/deutschland/stipendien/datenbank/en/21148-scholarship-database/?detail=50026397',
+    last_verified_at: '2025-01-25',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Academic track record in relevant disciplines (politics, law, economics, management)',
+      'Convincing motivation and clear relevance to social, political, or economic development of home region',
+      'Demonstrated civic engagement, political participation, or public sector initiative',
+      'Targeted career goals in governance, NGOs, or public institutions'
+    ],
+    application_procedure: [
+      'Select up to two participating master\'s courses in order of priority',
+      'Complete unified DAAD Helmut-Schmidt application form',
+      'Send comprehensive application dossier directly to the chosen university master\'s admissions office',
+      'Joint selection committee of DAAD and partner universities evaluates candidates in autumn'
+    ],
+    required_documents: [
+      { id: 'daad-form', name: 'DAAD Application Form & Priority Ranking', required: true },
+      { id: 'mot-letter', name: 'Single Letter of Motivation covering both course choices', required: true },
+      { id: 'cv', name: 'Europass format Curriculum Vitae', required: true },
+      { id: 'transcripts', name: 'Official University Degree Certificate & Transcript with grading key', required: true },
+      { id: 'rec-letters', name: 'Recent letter of recommendation from university professor or employer', required: true }
+    ],
+    overview: 'This scholarship programme is designed to qualify future leaders in politics, law, economics and administration according to the principles of Good Governance and to prepare them in a practice-oriented course for subsequent professional activities in their home countries.',
+    competitiveness: 'High',
+    tags: ['Fully Funded', 'DAAD', 'Germany', 'Public Governance', 'ODA Countries']
+  },
+  {
+    id: 'erasmus-mundus-emjmd-2025',
+    title: 'Erasmus Mundus Joint Masters Scholarship',
+    provider: 'European Commission / EACEA',
+    host_university: 'International Consortium of at least 3 European Universities',
+    destination_country: 'European Union (Multinational)',
+    destination_city: 'Multiple European Cities (Rotational)',
+    eligible_nationalities: ['Open to students from all nationalities worldwide'],
+    target_degrees: ['masters'],
+    eligible_subjects: ['Artificial Intelligence', 'Data Science', 'Renewable Energy', 'Marine Sciences', 'Cybersecurity', 'Public Health', 'Humanities', 'Over 150 Specialized Domains'],
+    academic_requirements: {
+      min_gpa: 3.3,
+      grading_scale: '4.0',
+      required_degree: 'First higher education degree (Bachelor or equivalent recognized diploma)',
+      description: 'Solid academic foundation in discipline closely related to specific master consortium. High standing in graduating class.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS Academic', 'TOEFL iBT', 'Cambridge English'],
+      min_ielts: 6.5,
+      min_toefl: 92,
+      is_waivable: true,
+      waiver_conditions: 'Instruction was English or native English speakers, depending on consortium policies.',
+      description: 'Proficiency in English is mandatory; optional language training in local language of host countries.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 1400,
+      monthly_stipend_currency: 'EUR',
+      living_stipend_details: '€1,400 monthly allowance for living expenses for up to 24 months.',
+      travel_allowance_details: 'Full coverage of student participation costs including tuition, library, and comprehensive insurance.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'Integrated worldwide insurance scheme compliant with EU standards.',
+      estimated_annual_value_usd: 38000
+    },
+    application_open_date: '2024-10-15',
+    application_deadline: '2025-02-15',
+    intake_year: 2025,
+    official_url: 'https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters',
+    source_url: 'https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en',
+    last_verified_at: '2025-01-10',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'High academic merit and relevance of previous coursework to the EMJM topic',
+      'Statement of purpose articulating interest in the multi-university mobility scheme',
+      'Letters of recommendation reflecting academic capability and adaptability',
+      'Demonstrated intercultural readiness to relocate to 2 or 3 distinct European countries'
+    ],
+    application_procedure: [
+      'Consult the official Erasmus Mundus Catalogue of 150+ joint master programs',
+      'Apply directly to the coordinator university website of your chosen master program',
+      'You can apply for up to three different Erasmus Mundus programs in a single intake',
+      'Consortium board conducts evaluation and submits scholarship ranking to EU Executive Agency'
+    ],
+    required_documents: [
+      { id: 'transcripts', name: 'Bachelor Degree Transcripts with certified translations', required: true },
+      { id: 'sop', name: 'Motivation Letter / Statement of Interest tailored to consortium', required: true },
+      { id: 'cv', name: 'Curriculum Vitae detailing projects and experiences', required: true },
+      { id: 'ref-letters', name: 'Two Reference Letters from academic referees', required: true },
+      { id: 'residence-proof', name: 'Certificate of Residence (for geographic allocation)', required: true }
+    ],
+    overview: 'Erasmus Mundus Joint Masters are prestigious integrated study programmes, jointly delivered by an international consortium of higher education institutions. Students study in at least two European countries and receive joint or double degrees with full EU scholarships.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'European Union', 'Master\'s', 'Multi-Country Mobility', 'Joint Degree']
+  },
+  {
+    id: 'australia-awards-2025',
+    title: 'Australia Awards Scholarships',
+    provider: 'Department of Foreign Affairs and Trade (DFAT), Australian Government',
+    host_university: 'Participating Australian Universities & Higher Education Institutions',
+    destination_country: 'Australia',
+    destination_city: 'Canberra / Melbourne / Sydney / Brisbane / Adelaide / Perth',
+    eligible_nationalities: ['Citizens of participating countries in Indo-Pacific, South Asia, and Africa'],
+    target_degrees: ['masters', 'phd'],
+    eligible_subjects: ['Climate Change & Agriculture', 'Public Health', 'Infrastructure & Engineering', 'Education', 'Governance & Public Policy', 'Digital Economy', 'Resource Management'],
+    academic_requirements: {
+      min_gpa: 3.2,
+      grading_scale: '4.0',
+      required_degree: 'Relevant bachelor degree or honours qualification',
+      description: 'Satisfy academic entry requirements of the chosen Australian university. Strong focus on development priority areas agreed between Australia and partner country.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS Academic', 'TOEFL iBT', 'PTE Academic'],
+      min_ielts: 6.5,
+      min_toefl: 84,
+      is_waivable: false,
+      waiver_conditions: 'No waivers; minimum sub-band of 6.0 in IELTS or equivalent is mandatory.',
+      description: 'Official test result must be valid at the time of application submission.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 3000,
+      monthly_stipend_currency: 'AUD',
+      living_stipend_details: 'Contribution to Living Expenses (CLE) paid fortnightly at approximately AUD $36,000/year.',
+      travel_allowance_details: 'Return economy class airfare to and from Australia via the most direct route.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'Establishment allowance of AUD $5,000, Overseas Student Health Cover (OSHC), introductory academic program (IAP).',
+      estimated_annual_value_usd: 52000
+    },
+    application_open_date: '2025-02-01',
+    application_deadline: '2025-04-30',
+    intake_year: 2026,
+    official_url: 'https://www.dfat.gov.au/people-to-people/australia-awards/australia-awards-scholarships',
+    source_url: 'https://www.dfat.gov.au/about-us/publications/australia-awards-participating-countries',
+    last_verified_at: '2025-01-18',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Professional and academic capability to succeed in high-level Australian coursework or research',
+      'Potential impact on development challenges in home country or region',
+      'Realistic Re-integration Plan showing how new knowledge will be practically applied',
+      'Commitment to return home for at least two years upon completion'
+    ],
+    application_procedure: [
+      'Review country-specific eligibility criteria and priority study sectors on DFAT website',
+      'Register and lodge application on OASIS (Online Australia Awards Scholarships Information System)',
+      'Shortlisted applicants are invited to interview panel in partner country capital',
+      'Successful awardees undergo pre-departure training and placement coordination'
+    ],
+    required_documents: [
+      { id: 'transcripts', name: 'Certified copies of university transcripts and degree certificates', required: true },
+      { id: 'id-doc', name: 'Certified proof of citizenship (Passport or National ID)', required: true },
+      { id: 'english-cert', name: 'Official IELTS / TOEFL / PTE test score certificate', required: true },
+      { id: 'referee-report', name: 'Two completed DFAT Academic or Employment Referee Reports', required: true },
+      { id: 'dev-impact', name: 'Development Impact and Re-integration Plan', required: true }
+    ],
+    overview: 'Australia Awards Scholarships are prestigious international awards offered by the Australian Government to the next generation of global leaders for development. Through study and research, recipients develop the skills and knowledge to drive change and help build enduring people-to-people links.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'Australia DFAT', 'Master\'s & PhD', 'Indo-Pacific Priority', 'OSHC Covered']
+  },
+  {
+    id: 'gates-cambridge-2025',
+    title: 'Gates Cambridge Scholarship',
+    provider: 'Bill & Melinda Gates Foundation & University of Cambridge',
+    host_university: 'University of Cambridge',
+    destination_country: 'United Kingdom',
+    destination_city: 'Cambridge',
+    eligible_nationalities: ['Citizens of any country outside the United Kingdom'],
+    target_degrees: ['phd', 'masters'],
+    eligible_subjects: ['Biomedical Sciences', 'Artificial Intelligence', 'Engineering', 'Public Health', 'Theoretical Physics', 'Law', 'History', 'All Cambridge Postgraduate Subjects'],
+    academic_requirements: {
+      min_gpa: 3.8,
+      grading_scale: '4.0',
+      required_degree: 'First-class honours degree or equivalent international distinction',
+      description: 'Exceptional academic excellence (usually first-class honours or equivalent GPA 3.8+/4.0) with proven intellectual curiosity.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS Academic', 'TOEFL iBT', 'Cambridge C2'],
+      min_ielts: 7.5,
+      min_toefl: 110,
+      is_waivable: true,
+      waiver_conditions: 'Cambridge language requirement waivers granted if previous degree completed in majority native English country.',
+      description: 'Must meet the specific English language requirement of the admitting Cambridge academic department.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 1666,
+      monthly_stipend_currency: 'GBP',
+      living_stipend_details: 'University Composition Fee paid in full, plus maintenance allowance of £20,000/year (approx. £1,666/month).',
+      travel_allowance_details: 'One economy single airfare at beginning and end of course.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'Inbound visa costs, Immigration Health Surcharge (IHS), academic development funding (up to £2,000), family allowance.',
+      estimated_annual_value_usd: 62000
+    },
+    application_open_date: '2024-09-01',
+    application_deadline: '2025-01-08',
+    intake_year: 2025,
+    official_url: 'https://www.gatescambridge.org/',
+    source_url: 'https://www.gatescambridge.org/apply/eligibility/',
+    last_verified_at: '2025-01-12',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Outstanding intellectual ability and academic achievement',
+      'Compelling reasons for choice of Cambridge course and research supervisor alignment',
+      'A proven commitment to improving the lives of others and addressing societal challenges',
+      'Demonstrated capacity for ethical, inspiring leadership'
+    ],
+    application_procedure: [
+      'Apply for course admission and Gates Cambridge scholarship via the University of Cambridge Postgraduate Applicant Portal',
+      'Submit dedicated 500-word Gates Cambridge personal statement and specific Gates Cambridge reference',
+      'Cambridge academic department reviews and ranks course applicants',
+      'Shortlisted candidates invited to rigorous 25-minute interview before Gates Cambridge selection panel'
+    ],
+    required_documents: [
+      { id: 'transcripts', name: 'Official Academic Transcripts of all university studies', required: true },
+      { id: 'gates-statement', name: 'Gates Cambridge Statement explaining alignment with Gates mission', required: true },
+      { id: 'research-proposal', name: 'Research Proposal (mandatory for PhD applicants)', required: true },
+      { id: 'gates-reference', name: 'Dedicated Gates Cambridge Reference on leadership and service', required: true },
+      { id: 'academic-refs', name: 'Two Academic References for university admission', required: true }
+    ],
+    overview: 'The Gates Cambridge Scholarship is one of the most prestigious international scholarships in the world. Established through a $210 million donation from the Bill & Melinda Gates Foundation, it covers full cost of study at the University of Cambridge for students outside the UK.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'University of Cambridge', 'Gates Foundation', 'PhD & Masters', 'Global Leadership']
+  },
+  {
+    id: 'eiffel-excellence-2025',
+    title: 'Eiffel Excellence Scholarship Program',
+    provider: 'French Ministry for Europe and Foreign Affairs & Campus France',
+    host_university: 'Accredited French Universities & Grandes Écoles',
+    destination_country: 'France',
+    destination_city: 'Paris / Lyon / Toulouse / Grenoble / Nationwide',
+    eligible_nationalities: ['Foreign nationals of non-French citizenship'],
+    target_degrees: ['masters', 'phd'],
+    eligible_subjects: ['Biology and Health', 'Ecological Transition', 'Mathematics and Digital Science', 'Engineering Science', 'History, French Language & Civilization', 'Law and Political Science', 'Economics and Management'],
+    academic_requirements: {
+      min_gpa: 3.4,
+      grading_scale: '4.0',
+      required_degree: 'Bachelor degree (for Master level) or Master degree (for PhD track)',
+      description: 'For Master\'s track: candidates must be aged 27 or under. For PhD track: candidates must be aged 32 or under. Top ranking in student cohort.'
+    },
+    language_requirements: {
+      accepted_tests: ['DELF/DALF (for French tracks)', 'TOEFL/IELTS (for English tracks)'],
+      min_ielts: 6.5,
+      min_toefl: 90,
+      is_waivable: true,
+      waiver_conditions: 'Determined directly by the French higher education institution submitting the candidate file.',
+      description: 'Language requirement matches the language of instruction of the chosen curriculum.'
+    },
+    funding_details: {
+      funding_type: 'partially_funded', // does not pay university tuition fees, but universities usually waive them
+      tuition_coverage_percent: 0,
+      monthly_stipend_amount: 1181,
+      monthly_stipend_currency: 'EUR',
+      living_stipend_details: '€1,181/month for Master candidates (up to 36 months); €1,700/month for PhD candidates (up to 18 months). Note: State institutions in France typically waive tuition for Eiffel laureates.',
+      travel_allowance_details: 'Single return international transport ticket from home country to France.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: false,
+      other_allowances: 'Campus France assistance in securing student housing, cultural activities, social security reimbursement.',
+      estimated_annual_value_usd: 22000
+    },
+    application_open_date: '2024-10-01',
+    application_deadline: '2025-01-10',
+    intake_year: 2025,
+    official_url: 'https://www.campusfrance.org/en/the-eiffel-scholarship-program-of-excellence',
+    source_url: 'https://www.campusfrance.org/en/eiffel',
+    last_verified_at: '2025-01-16',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Excellence of candidate determined by prior academic records and scientific publications',
+      'International orientation and institutional strategy of the French host establishment',
+      'Foreign policy priorities of the French Ministry for Europe and Foreign Affairs'
+    ],
+    application_procedure: [
+      'Students do NOT apply to Campus France directly; contact your chosen French university admissions office',
+      'The French institution screens candidates and decides to support your Eiffel candidacy',
+      'The university compiles and submits the official dossier directly to Campus France',
+      'Campus France releases list of laureates every spring'
+    ],
+    required_documents: [
+      { id: 'resume', name: 'Curriculum Vitae specifying academic ranking and distinctions', required: true },
+      { id: 'academic-project', name: 'Professional and academic project description (1-2 pages)', required: true },
+      { id: 'transcripts', name: 'Official transcripts of records and diplomas with certified French or English translation', required: true },
+      { id: 'language-cert', name: 'Language proficiency certificate (French or English)', required: true },
+      { id: 'id-doc', name: 'Photocopy of Passport showing nationality and birthdate', required: true }
+    ],
+    overview: 'The Eiffel Excellence Scholarship Program was established by the French Ministry for Europe and Foreign Affairs to enable French higher education establishments to attract top foreign students for master\'s and PhD degree programs in priority study disciplines.',
+    competitiveness: 'High',
+    tags: ['France', 'Campus France', 'Monthly Allowance', 'Master & PhD', 'Aged 27/32 limit']
+  },
+  {
+    id: 'swiss-excellence-2025',
+    title: 'Swiss Government Excellence Scholarships',
+    provider: 'Federal Commission for Scholarships for Foreign Students (FCS), Swiss Confederation',
+    host_university: 'Swiss Cantonal Universities, Federal Institutes of Technology (ETH Zurich, EPFL), or Research Institutes',
+    destination_country: 'Switzerland',
+    destination_city: 'Zurich / Lausanne / Geneva / Basel / Bern',
+    eligible_nationalities: ['Young foreign researchers from over 180 countries'],
+    target_degrees: ['phd', 'postdoc'],
+    eligible_subjects: ['Quantum Science', 'Biotechnology', 'Computer Science', 'Robotics', 'Physics', 'Chemistry', 'Environmental Engineering', 'All Scientific Disciplines'],
+    academic_requirements: {
+      min_gpa: 3.7,
+      grading_scale: '4.0',
+      required_degree: 'Master\'s degree or equivalent university degree achieved before 31 July prior to start',
+      description: 'Candidate must have obtained master\'s degree with high distinction. Mandatory confirmation letter from an accredited Swiss professor willing to act as academic supervisor.'
+    },
+    language_requirements: {
+      accepted_tests: ['Host Professor Assessment', 'IELTS', 'TOEFL'],
+      min_ielts: 7.0,
+      min_toefl: 100,
+      is_waivable: true,
+      waiver_conditions: 'Supervisor confirms researcher possesses required linguistic proficiency in English, German, or French.',
+      description: 'Linguistic competence confirmed directly via academic supervisor appraisal.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 1920,
+      monthly_stipend_currency: 'CHF',
+      living_stipend_details: 'CHF 1,920 monthly grant for PhD students (approx. $2,150 USD); CHF 3,500/month for postdocs.',
+      travel_allowance_details: 'Return flight allowance provided at end of scholarship tenure for non-EU/EFTA students.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'One-off housing allowance (CHF 300), public transport half-fare card (Swiss Halbtax card).',
+      estimated_annual_value_usd: 35000
+    },
+    application_open_date: '2024-08-01',
+    application_deadline: '2024-12-15',
+    intake_year: 2025,
+    official_url: 'https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships.html',
+    source_url: 'https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships/countries.html',
+    last_verified_at: '2025-01-22',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Candidate profile, research capacity, and high academic performance',
+      'Quality, originality, and feasibility of the independent research project',
+      'Supervision quality and institutional integration by the host professor in Switzerland'
+    ],
+    application_procedure: [
+      'Contact a professor at a Swiss academic institution and secure a formal commitment letter to supervise your research',
+      'Obtain application package from the Swiss Embassy in your country of citizenship',
+      'Submit three printed copies of complete application package to the Swiss Embassy before country deadline',
+      'Federal Commission for Scholarships evaluates dossiers and issues awards in May'
+    ],
+    required_documents: [
+      { id: 'fcs-application', name: 'Signed FCS Application Form with photo', required: true },
+      { id: 'supervisor-letter', name: 'Formal Host Commitment Letter from Swiss Professor', required: true },
+      { id: 'research-proposal', name: 'Detailed Research Proposal (max 5 pages) using official FCS template', required: true },
+      { id: 'confidential-rec', name: 'Two Confidential Recommendation Letters from academic professors', required: true },
+      { id: 'health-cert', name: 'Medical Health Certificate signed by physician', required: true }
+    ],
+    overview: 'The Swiss Government Excellence Scholarships foster international exchange and research cooperation between Switzerland and over 180 other countries. The research scholarships are available to post-graduate researchers in any discipline who intend to pursue research or doctoral studies at public Swiss universities.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'Swiss Confederation', 'PhD & Postdoc', 'Research Heavy', 'Supervisor Required']
+  },
+  {
+    id: 'singa-singapore-2025',
+    title: 'Singapore International Graduate Award (SINGA)',
+    provider: 'Agency for Science, Technology and Research (A*STAR), NTU, NUS & SUTD',
+    host_university: 'National University of Singapore (NUS), Nanyang Technological University (NTU), SUTD, or A*STAR Institutes',
+    destination_country: 'Singapore',
+    destination_city: 'Singapore',
+    eligible_nationalities: ['All international graduates with a passion for research and excellent academic results'],
+    target_degrees: ['phd'],
+    eligible_subjects: ['Artificial Intelligence', 'Biomedical Engineering', 'Computer Science', 'Physical Sciences', 'Materials Engineering', 'Robotics & Automation', 'Bioinformatics'],
+    academic_requirements: {
+      min_gpa: 3.5,
+      grading_scale: '4.0',
+      required_degree: 'Bachelor\'s or Master\'s degree in science or engineering with outstanding academic achievements',
+      description: 'Solid academic foundation with strong research interest; prior publications or laboratory projects highly advantageous.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS', 'TOEFL', 'Medium of Instruction verification'],
+      min_ielts: 6.5,
+      min_toefl: 85,
+      is_waivable: true,
+      waiver_conditions: 'Instruction medium certificate accepted if university courses were conducted in English.',
+      description: 'Strong written and communicative English skills required for laboratory publications.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 2700,
+      monthly_stipend_currency: 'SGD',
+      living_stipend_details: 'SGD $2,700 monthly stipend, which increases to SGD $3,200 upon passing the qualifying PhD examination (usually Year 2).',
+      travel_allowance_details: 'One-time airfare grant of up to SGD $1,500.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'One-time settling-in allowance of SGD $1,000.',
+      estimated_annual_value_usd: 36000
+    },
+    application_open_date: '2024-11-01',
+    application_deadline: '2025-06-01',
+    intake_year: 2026,
+    official_url: 'https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa',
+    source_url: 'https://www.a-star.edu.sg/Scholarships/overview',
+    last_verified_at: '2025-01-20',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Strong academic excellence and research credentials',
+      'Demonstrated enthusiasm and capacity to carry out cutting-edge PhD laboratory research',
+      'High referee evaluation reports from research supervisors',
+      'Performance during virtual technical interview with joint university-A*STAR panel'
+    ],
+    application_procedure: [
+      'Browse research projects and supervisors on A*STAR or university portals',
+      'Submit application via the centralized SINGA online applicant portal',
+      'Nominate two academic referees who will receive an automated request to upload reports',
+      'Shortlisted candidates attend video interview with faculty selection panel'
+    ],
+    required_documents: [
+      { id: 'transcripts', name: 'Bachelor and/or Master transcripts with university grading scale', required: true },
+      { id: 'passport', name: 'Valid International Passport scan', required: true },
+      { id: 'photo', name: 'Recent passport-sized photograph', required: true },
+      { id: 'recommendations', name: 'Two Academic Referee evaluation reports', required: true },
+      { id: 'publications', name: 'List of Publications or sample research abstract (if any)', required: false }
+    ],
+    overview: 'The Singapore International Graduate Award (SINGA) is a collaboration between A*STAR, NTU, NUS, and SUTD. Ph.D. training is conducted in English at your chosen lab at A*STAR Research Institutes, NTU, NUS or SUTD. Students will be supervised by distinguished researchers in world-class facilities.',
+    competitiveness: 'High',
+    tags: ['Fully Funded', 'Singapore A*STAR', 'PhD Track', 'STEM & AI', 'High Stipend']
+  },
+  {
+    id: 'mext-japan-university-2025',
+    title: 'MEXT Japanese Government Scholarship (University Recommendation)',
+    provider: 'Ministry of Education, Culture, Sports, Science and Technology (MEXT), Government of Japan',
+    host_university: 'Top National Universities of Japan (University of Tokyo, Kyoto University, Tokyo Tech, Osaka University, etc.)',
+    destination_country: 'Japan',
+    destination_city: 'Tokyo / Kyoto / Osaka / Sendai / Nationwide',
+    eligible_nationalities: ['Citizens of countries having diplomatic relations with the Japanese Government'],
+    target_degrees: ['masters', 'phd'],
+    eligible_subjects: ['Robotics', 'Computer Science & AI', 'Automotive Engineering', 'Applied Physics', 'Economics', 'Environmental Engineering', 'Japanese Studies', 'All Fields Available at Host University'],
+    academic_requirements: {
+      min_gpa: 3.3,
+      grading_scale: '4.0',
+      required_degree: 'Bachelor\'s degree (for Master\'s) or Master\'s degree (for PhD)',
+      description: 'GPA minimum equivalent to 2.30 out of 3.00 on the Japanese MEXT scale. High academic merit in field matching host Japanese laboratory.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS', 'TOEFL', 'JLPT', 'English Medium Letter'],
+      min_ielts: 6.0,
+      min_toefl: 80,
+      is_waivable: true,
+      waiver_conditions: 'Instruction conducted in English, or JLPT level N2/N1 for Japanese-taught humanities programs.',
+      description: 'Sufficient proficiency in English or Japanese to engage in laboratory seminars and thesis writing.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 147000,
+      monthly_stipend_currency: 'JPY',
+      living_stipend_details: '¥144,000/month (Research students), ¥147,000/month (Master\'s), or ¥148,000/month (PhD).',
+      travel_allowance_details: 'Roundtrip economy class flight ticket between international airport of home country and Japan.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'Full university entrance examination fee and matriculation fees waived.',
+      estimated_annual_value_usd: 21000
+    },
+    application_open_date: '2024-10-01',
+    application_deadline: '2025-01-20',
+    intake_year: 2025,
+    official_url: 'https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/',
+    source_url: 'https://www.mext.go.jp/a_menu/koutou/ryugaku/boshu/1423023_00018.htm',
+    last_verified_at: '2025-01-18',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Strong academic match with prospective academic advisor in Japan',
+      'Thorough, well-reasoned field of study and research plan',
+      'Demonstrated interest in collaborative research and cultural bridge-building with Japan'
+    ],
+    application_procedure: [
+      'Search Japanese national universities for professors whose research aligns with your interests',
+      'Contact prospective professor, submit research plan, and obtain unofficial acceptance to recommend you',
+      'Submit formal MEXT application dossier through university international office',
+      'University screens candidates and submits recommendations to MEXT Tokyo for final approval'
+    ],
+    required_documents: [
+      { id: 'mext-form', name: 'Official MEXT Application Form', required: true },
+      { id: 'research-plan', name: 'Field of Study and Research Program Plan (max 3 pages)', required: true },
+      { id: 'transcripts', name: 'Academic Transcripts from all attended higher education institutions', required: true },
+      { id: 'recommendation', name: 'Letter of Recommendation from Dean or Department Head addressed to President of Host University', required: true },
+      { id: 'medical-cert', name: 'MEXT Certificate of Health filled out by a medical doctor', required: true }
+    ],
+    overview: 'The MEXT (Ministry of Education, Culture, Sports, Science and Technology) scholarship is the flagship Japanese Government scholarship covering full tuition, living expenses, and round-trip airfare. Through the University Recommendation track, Japanese universities nominate outstanding international candidates directly.',
+    competitiveness: 'High',
+    tags: ['Fully Funded', 'Japanese Government (MEXT)', 'Master\'s & PhD', 'Japan', 'Full Tuition & Flights']
+  },
+  {
+    id: 'rhodes-scholarship-2025',
+    title: 'Rhodes Scholarship at the University of Oxford',
+    provider: 'The Rhodes Trust',
+    host_university: 'University of Oxford',
+    destination_country: 'United Kingdom',
+    destination_city: 'Oxford',
+    eligible_nationalities: ['Constituency-based (over 64 countries) plus Global Rhodes Scholarships for any nationality'],
+    target_degrees: ['masters', 'phd'],
+    eligible_subjects: ['Philosophy, Politics & Economics (PPE)', 'Computer Science', 'Genomics & Medicine', 'Law (BCL)', 'Environmental Change', 'All Oxford Graduate Degrees'],
+    academic_requirements: {
+      min_gpa: 3.85,
+      grading_scale: '4.0',
+      required_degree: 'First class undergraduate honours degree or GPA 3.8+/4.0',
+      description: 'First-class honours degree or equivalent GPA above 3.85/4.0. Extraordinary intellectual achievement and character.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS Academic', 'TOEFL iBT', 'Oxford C1/C2 Standard'],
+      min_ielts: 7.5,
+      min_toefl: 110,
+      is_waivable: true,
+      waiver_conditions: 'Exempt if undergraduate education was conducted primarily in English.',
+      description: 'Must meet the higher tier English language requirements of the University of Oxford.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 1700,
+      monthly_stipend_currency: 'GBP',
+      living_stipend_details: 'Oxford University composition fee paid in full, plus maintenance stipend of £19,092/year (£1,591 - £1,700/month).',
+      travel_allowance_details: 'Two economy class flights: to the UK at start, and home at end of scholarship.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: true,
+      other_allowances: 'Student visa fee, Immigration Health Surcharge (IHS), arrival allowance, Rhodes House fellowship events.',
+      estimated_annual_value_usd: 65000
+    },
+    application_open_date: '2024-06-01',
+    application_deadline: '2024-10-02',
+    intake_year: 2025,
+    official_url: 'https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/',
+    source_url: 'https://www.rhodeshouse.ox.ac.uk/scholarships/how-to-apply-for-a-rhodes-scholarship/',
+    last_verified_at: '2025-01-20',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Literary and scholastic attainments (academic excellence)',
+      'Energy to use one\'s talents to the full (exemplified by success in sports, arts, or debate)',
+      'Truth, courage, devotion to duty, sympathy for and protection of the weak',
+      'Moral force of character and instincts to lead'
+    ],
+    application_procedure: [
+      'Identify your designated constituency or the Global Rhodes competition',
+      'Obtain an official institutional endorsement letter from your undergraduate university',
+      'Submit comprehensive dossier on the Rhodes Trust portal before the constituency deadline',
+      'Selected finalists attend a multi-stage weekend social reception and in-person final interview'
+    ],
+    required_documents: [
+      { id: 'transcripts', name: 'Official Academic Transcripts of undergraduate work', required: true },
+      { id: 'personal-statement', name: 'Personal Statement (max 750 words) reflecting on aspirations and values', required: true },
+      { id: 'academic-statement', name: 'Academic Statement of Study (max 350 words) justifying chosen Oxford course', required: true },
+      { id: 'referees', name: 'Five to eight letters of recommendation (minimum 4 academic)', required: true },
+      { id: 'endorsement', name: 'Official University Endorsement Letter', required: true }
+    ],
+    overview: 'The Rhodes Scholarship is the oldest and perhaps most prestigious international scholarship programme, enabling outstanding young people from around the world to study at the University of Oxford. Rhodes Scholars are selected for exceptional intellect, character, leadership and commitment to service.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'University of Oxford', 'The Rhodes Trust', 'Leadership & Character', 'Master\'s & PhD']
+  },
+  {
+    id: 'vanier-canada-2025',
+    title: 'Vanier Canada Graduate Scholarships (Vanier CGS)',
+    provider: 'Government of Canada (CIHR, NSERC & SSHRC)',
+    host_university: 'Eligible Canadian Universities with Vanier CGS Quotas',
+    destination_country: 'Canada',
+    destination_city: 'Toronto / Vancouver / Montreal / Ottawa / Nationwide',
+    eligible_nationalities: ['Canadian citizens, permanent residents, and foreign citizens'],
+    target_degrees: ['phd'],
+    eligible_subjects: ['Health Research (CIHR)', 'Natural Sciences & Engineering (NSERC)', 'Social Sciences & Humanities (SSHRC)', 'Artificial Intelligence', 'Clean Tech'],
+    academic_requirements: {
+      min_gpa: 3.7,
+      grading_scale: '4.0',
+      required_degree: 'Master\'s degree or completing first year of doctoral program',
+      description: 'First-class academic average (minimum A- / 3.7 out of 4.0) in each of the last two years of full-time study.'
+    },
+    language_requirements: {
+      accepted_tests: ['IELTS', 'TOEFL', 'Canadian University Standard'],
+      min_ielts: 7.0,
+      min_toefl: 100,
+      is_waivable: true,
+      waiver_conditions: 'Determined by individual Canadian admitting graduate department.',
+      description: 'Linguistic competence in English or French required for doctoral coursework.'
+    },
+    funding_details: {
+      funding_type: 'fully_funded',
+      tuition_coverage_percent: 100,
+      monthly_stipend_amount: 4166,
+      monthly_stipend_currency: 'CAD',
+      living_stipend_details: 'CAD $50,000 per year for three years (non-taxable stipend to student).',
+      travel_allowance_details: 'Most Canadian host universities provide matching tuition waivers or top-ups.',
+      health_insurance_covered: true,
+      accommodation_provided: false,
+      visa_fee_covered: false,
+      other_allowances: 'Access to Tri-Agency research grants and institutional doctoral funds.',
+      estimated_annual_value_usd: 37500
+    },
+    application_open_date: '2024-07-01',
+    application_deadline: '2024-11-01',
+    intake_year: 2025,
+    official_url: 'https://vanier.gc.ca/en/home-accueil.html',
+    source_url: 'https://vanier.gc.ca/en/eligibility-admissibilite.html',
+    last_verified_at: '2025-01-14',
+    publication_status: 'open',
+    is_verified_data: true,
+    selection_criteria: [
+      'Academic Excellence: demonstrated by transcripts, awards, and scholarships',
+      'Research Potential: quality of research proposal, publication record, and contribution to discipline',
+      'Leadership (demonstrated and potential): impact on community, civic initiative, and mentorship'
+    ],
+    application_procedure: [
+      'Candidates must be nominated by an eligible Canadian institution with an assigned Vanier quota',
+      'Inform the faculty of graduate studies at your target Canadian university of your intention to apply',
+      'Prepare research proposal and leadership personal statement on ResearchNet portal',
+      'The university internal committee reviews applications and submits top nominees to federal selection committee'
+    ],
+    required_documents: [
+      { id: 'research-proposal', name: 'Doctoral Research Proposal (max 2 pages)', required: true },
+      { id: 'leadership-statement', name: 'Personal Leadership Statement (max 2 pages)', required: true },
+      { id: 'ref-assessments', name: 'Two Academic Referee Assessments and Two Leadership Reference Letters', required: true },
+      { id: 'transcripts', name: 'All post-secondary certified transcripts', required: true },
+      { id: 'ccv', name: 'Canadian Common CV (CCV) format', required: true }
+    ],
+    overview: 'The Vanier Canada Graduate Scholarships (Vanier CGS) program helps Canadian institutions attract highly qualified doctoral students. Valued at $50,000 per year for three years during doctoral studies, it considers academic excellence, research potential and leadership.',
+    competitiveness: 'Extremely High',
+    tags: ['Fully Funded', 'Government of Canada', 'PhD Only', 'CAD $50k/Year', 'Leadership & Research']
+  }
+];
+
+export const DEMO_USER_PROFILE = {
+  user_id: 'demo-student-001',
+  full_name: 'Alex Rivera',
+  citizenship: 'Mexico',
+  residence_country: 'Mexico',
+  current_education_level: 'Bachelor Degree',
+  highest_completed_degree: 'Bachelor of Science in Computer Science',
+  gpa: 3.65,
+  grading_scale: '4.0' as const,
+  target_degree: 'masters' as const,
+  field_of_study: 'Computer Science & AI',
+  target_intake_year: 2026,
+  expected_graduation_date: '2024-07-15',
+  preferred_countries: ['United Kingdom', 'Germany', 'United States', 'Australia'],
+  preferred_universities: ['University of Cambridge', 'Oxford', 'Technical University of Munich'],
+  preferred_study_mode: 'on_campus' as const,
+  preferred_language: 'English',
+  language_test_status: 'taken' as const,
+  language_test_type: 'IELTS' as const,
+  language_test_score: 7.5,
+  funding_need: 'full_only' as const,
+  tuition_waiver_required: true,
+  living_stipend_required: true,
+  travel_grant_preferred: true,
+  application_budget_usd: 500,
+  has_research_experience: true,
+  publications_count: 1,
+  years_of_work_experience: 2.5,
+  leadership_extracurricular: 'President of University AI Student Chapter, community coding volunteer mentor',
+  relevant_skills: ['Python', 'Machine Learning', 'Data Analysis', 'Technical Writing'],
+  profile_completion_percentage: 95,
+  updated_at: '2025-01-20T10:00:00Z'
+};
