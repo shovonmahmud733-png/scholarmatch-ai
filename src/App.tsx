@@ -24,7 +24,7 @@ import { AboutPage, PrivacyPage, TermsPage } from './pages/InformationalPages';
 export const App: React.FC = () => {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         <div className="min-h-screen flex flex-col bg-[#f8fafc] text-slate-800 font-sans">
           <Navbar />
