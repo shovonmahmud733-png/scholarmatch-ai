@@ -8,6 +8,7 @@ import {
   RecommendationFeedback 
 } from '../types';
 import { SCHOLARSHIPS_DATA, DEMO_USER_PROFILE } from '../data/scholarships';
+import { submitFeedbackApi } from '../services/api';
 
 export interface NotificationItem {
   id: string;
@@ -352,6 +353,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       created_at: new Date().toISOString(),
     };
     setFeedbacks(prev => [newFeedback, ...prev]);
+    // Asynchronously submit to backend ML feedback loop if online
+    submitFeedbackApi(scholarshipId, type, notes).catch(() => {});
   };
 
   const markNotificationAsRead = (id: string) => {

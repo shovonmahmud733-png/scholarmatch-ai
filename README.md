@@ -94,29 +94,55 @@ Every record includes official source URLs, audited eligibility criteria, fundin
 
 ---
 
-## 6. How to Run Locally
+## 6. Live Deployments & Repository Links
+
+- **Live Application:** [https://shovonmahmud733-png.github.io/scholarmatch-ai/](https://shovonmahmud733-png.github.io/scholarmatch-ai/)
+- **GitHub Repository:** [https://github.com/shovonmahmud733-png/scholarmatch-ai](https://github.com/shovonmahmud733-png/scholarmatch-ai)
+
+---
+
+## 7. How to Run Locally
 
 ### Prerequisites
 - Node.js 18+ (tested on Node v20.18.0)
+- Python 3.10+ (tested on Python 3.11)
 - npm or pnpm
 
-### Quick Start
+### Frontend Setup
 
 ```bash
-# 1. Navigate to the project directory
+# 1. Navigate to the frontend directory
 cd scholarmatch-ai
 
-# 2. Install dependencies (if not already installed)
+# 2. Install dependencies
 npm install
 
-# 3. Start development server
+# 3. Start Vite development server
 npm run dev
 
 # 4. Build for production
 npm run build
-
-# 5. Preview production build locally
-npm run preview
 ```
 
-The application will start at `http://localhost:5173`.
+The frontend will run at `http://localhost:5173/scholarmatch-ai/` (or `http://localhost:5173/`).
+
+### Backend Setup (FastAPI + SQLAlchemy + Pydantic)
+
+```bash
+# 1. Navigate to backend directory
+cd scholarmatch-ai/backend
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Seed database with verified scholarships and demo candidate
+python seed_data.py
+
+# 4. Run automated test suite
+python test_api.py
+
+# 5. Start the FastAPI server
+python run.py
+```
+
+The FastAPI Swagger interactive documentation will be available at `http://127.0.0.1:8000/docs`.
